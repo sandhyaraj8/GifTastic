@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <title>Giphy API</title>
+  <style type="text/css">
+    body {
+      background-color: antiquewhite;
+    }
+
+    #topicsButton button,
+    #searchButton {
+      color: rgb(156, 92, 92);
+      background-color: rgb(234, 229, 238);
+    }
+
+    div,
+    input,
+    button {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="topicsButton"></div>
+
+    <div id="inputDiv" align='right'>
+      <label for="animal-input">Search for an animal</label>
+
+      <!-- Text Input Box -->
+      <input type="text" id="animal-input" /><br />
+      <button id="searchButton">Submit</button>
+    </div>
+  </div>
+
+  <div id="imagesDiv"></div>
+
+  <!--
+    vc
+       var myFullname="<img id='"+myNum+"' />";
+      console.log(myFullname); <img id="123" />
+      var myFullname="<img
+      id=\""+myNum+"\" >";console.log(myFullname); <img id="123" />
+    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascript/app.js"></script>
+</body>
+
+</html>
